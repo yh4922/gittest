@@ -7,7 +7,10 @@ git log     查看git版本修改历史 添加参数  --pretty=oneline  可以�
 git reset   回到制定的版本号  --hard 固定参数  HEAD代表当前的版本 ^表示上一个版本可以叠加过个^  可以用commit id替换HEAD
 git reflog  查看所有的git版本历史
 git checkout --   撤销工作区的修改  -- readme.txt  两个-
-
+git branch dev  创建分支  dev
+git checkout dev   切换到分支dev
+上面两条命令可以合并为 
+git checkout -b dev   创建爱你分支dev并切换到dev
 
 
 要关联一个远程库，使用命令{{ git remote add origin git@server-name:path/repo-name.git }}
